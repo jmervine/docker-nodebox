@@ -1,19 +1,10 @@
 # AUTHOR:         $maint
 # DESCRIPTION:    Minimal Node.js Image using Busybox
-FROM jmervine/nodebox-parent
+FROM jmervine/nodebox:$image
 MAINTAINER $maint
 
-# thanks to -- and forked from:
-# MAINTAINER Harald Westphal <h.westphal@gmx.de>
-# -> https://github.com/hwestphal/docker-nodebox
-
-ENV NODE_VERSION=$version
+ENV NODE_VERSION=$image
 ENV NODE_PATH=/src
-
-RUN \
-  curl -s http://nodejs.org/dist/v$image/node-v$image-linux-x64.tar.gz | gunzip -c | tar -xf - -C /
-
-ENV PATH /node-v$image-linux-x64/bin:$PATH
 
 RUN mkdir -v $NODE_PATH
 WORKDIR $NODE_PATH
