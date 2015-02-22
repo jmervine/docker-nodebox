@@ -40,8 +40,6 @@ print " "
 
 # Dockerfile-onbuild.tmpl
 tmplob = open(options.tmplob, 'r').read()
-data["image"] = data["image"]+"-onbuild"
-
 fout = os.path.join(options.tag, 'onbuild', 'Dockerfile')
 out = open(fout, 'w')
 out.write(Template(tmplob).safe_substitute(data))

@@ -21,3 +21,27 @@ This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) running
 * 0.10.36
 * 0.10.34
 * 0.10.32
+
+#### `-onbuild`
+
+All versions support an `-onbuild` variant. This is based on the core nodejs docker image, and expects the following:
+
+* Your `Dockerfile` is in your project root along side your `package.json`.
+* Your app to be started via `npm start`.
+
+Example tree:
+
+```
+.
+├── Dockerfile
+├── app.js
+└── package.json
+```
+
+Example Dockerfile:
+
+```
+FROM jmervine/nodebox:0.10.36-onbuild
+# replace this with your application's default port
+EXPOSE 8888
+```

@@ -1,22 +1,19 @@
 # AUTHOR:         Joshua Mervine <joshua@mervine.net>
 # DESCRIPTION:    Minimal Node.js Image using Busybox
-FROM progrium/busybox
+FROM jmervine/nodebox-parent
 MAINTAINER Joshua Mervine <joshua@mervine.net>
 
 # thanks to -- and forked from:
 # MAINTAINER Harald Westphal <h.westphal@gmx.de>
 # -> https://github.com/hwestphal/docker-nodebox
 
-ENV NODE_VERSION=0.12.0-onbuild
+ENV NODE_VERSION=$version
 ENV NODE_PATH=/src
 
 RUN \
-  opkg-install curl bash git libstdcpp && \
-  rm -f /lib/libpthread.so.0 && \
-  ln -s /lib/libpthread-2.18.so /lib/libpthread.so.0 && \
-  curl -s http://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.gz | gunzip | tar -xf - -C /
+  curl -s http://nodejs.org/dist/v0.12.0/node-v0.12.0-linux-x64.tar.gz | gunzip -c | tar -xf - -C /
 
-ENV PATH /node-v${NODE_VERSION}-linux-x64/bin:$PATH
+ENV PATH /node-v0.12.0-linux-x64/bin:$PATH
 
 RUN mkdir -v $NODE_PATH
 WORKDIR $NODE_PATH
