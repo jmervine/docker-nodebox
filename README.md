@@ -45,3 +45,24 @@ FROM jmervine/nodebox:0.10.36-onbuild
 # replace this with your application's default port
 EXPOSE 8888
 ```
+
+### Contributing: Building / Development
+
+Fork this repo.
+
+To add a new version, simply create a new directory -- updating the `latest` symlink if needed -- and run the following:
+
+```bash
+make generate/NEW_VERSION build/NEW_VERSION test/NEW_VERSION push/NEW_VERSION
+
+# if latest is updated
+make generate/latest build/latest test/latest
+```
+
+If updating either template, or the parent image:
+
+```
+make generate build test
+```
+
+Send me a pull request.
