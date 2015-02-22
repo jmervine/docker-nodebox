@@ -78,5 +78,5 @@ Send me a pull request.
 [`0.11.16-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.11.16/onbuild/Dockerfile
 [`0.12.0`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.0/Dockerfile
 [`0.12.0-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.0/onbuild/Dockerfile
-[`latest`]: https://github.com/jmervine/docker-nodebox/blob/master/latest/Dockerfile
-[`latest-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/latest/onbuild/Dockerfile
+[`latest`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.0/Dockerfile
+[`latest-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.0/onbuild/Dockerfile
