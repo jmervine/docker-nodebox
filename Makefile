@@ -23,8 +23,8 @@ $(BUILD_TARGETS):
 
 
 $(PUSH_TARGETS):
-	docker push $(IMAGE_BASE):$(subst push/,, $@)
-	docker push $(IMAGE_BASE):$(subst push/,, $@)-onbuild
+	docker push $(IMAGE_BASE):$(subst push/,,$@)
+	docker push $(IMAGE_BASE):$(subst push/,,$@)-onbuild
 
 parent: build/parent push/parent
 
