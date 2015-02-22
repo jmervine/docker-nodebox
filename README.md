@@ -18,7 +18,8 @@ This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) running
 * [`0.12.0`], [`0.12.0-onbuild`], [`latest`], [`latest-onbuild`]
 * [`0.11.16`], [`0.11.16-onbuild`]
 * [`0.11.14`], [`0.11.14-onbuild`]
-* [`0.10.36`], [`0.10.34-onbuild`]
+* [`0.10.36`], [`0.10.36-onbuild`]
+* [`0.10.34`], [`0.10.34-onbuild`]
 * [`0.10.32`], [`0.10.32-onbuild`]
 
 #### ONBUILD variant
