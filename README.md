@@ -1,6 +1,6 @@
 ## Node.js/Busybox Dockerfile
 
-This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) running with [Busybox](https://github.com/progrium/busybox) (~28 MB virtual size) for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/jmervine/nodebox/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
+This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) running with [Busybox](https://github.com/progrium/busybox) (~28 MB virtual size) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
 
 
 ### Base Docker Image
@@ -22,7 +22,7 @@ This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) running
 * 0.10.34
 * 0.10.32
 
-#### `-onbuild`
+#### ONBUILD variant
 
 All versions support an `-onbuild` variant. This is based on the core nodejs docker image, and expects the following:
 
