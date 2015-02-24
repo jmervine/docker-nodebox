@@ -21,6 +21,7 @@ This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) running
 * [`0.10.36`], [`0.10.36-onbuild`]
 * [`0.10.34`], [`0.10.34-onbuild`]
 * [`0.10.32`], [`0.10.32-onbuild`]
+* [`0.10.25`], [`0.10.25-onbuild`]
 
 #### ONBUILD variant
 
@@ -67,6 +68,8 @@ make generate build test
 
 Send me a pull request.
 
+[`0.10.25`]: https://github.com/jmervine/docker-nodebox/blob/master/0.10.25/Dockerfile
+[`0.10.25-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.10.25/onbuild/Dockerfile
 [`0.10.32`]: https://github.com/jmervine/docker-nodebox/blob/master/0.10.32/Dockerfile
 [`0.10.32-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.10.32/onbuild/Dockerfile
 [`0.10.34`]: https://github.com/jmervine/docker-nodebox/blob/master/0.10.34/Dockerfile
