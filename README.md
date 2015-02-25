@@ -1,5 +1,9 @@
 ## Node.js/Busybox Dockerfile
 
+> ### WARNING!!!
+>
+> Because this image doesn't contain `python`, `node-gyp` and therefore native extension extensions will not work.
+
 This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) running with [Busybox](https://github.com/progrium/busybox) (~28 MB virtual size) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
 
 
