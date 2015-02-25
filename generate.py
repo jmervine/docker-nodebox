@@ -19,8 +19,6 @@ if not options.tag:
     sys.exit()
 
 options.tmplf = 'Dockerfile.tmpl'
-options.tmplob = 'Dockerfile-onbuild.tmpl'
-
 tmplf = open(options.tmplf, 'r').read()
 
 # Dockerfile.tmpl
@@ -39,10 +37,21 @@ print "     from: " + options.tmplf
 print " "
 
 # Dockerfile-onbuild.tmpl
+options.tmplob = 'Dockerfile-onbuild.tmpl'
 tmplob = open(options.tmplob, 'r').read()
 fout = os.path.join(options.tag, 'onbuild', 'Dockerfile')
 out = open(fout, 'w')
 out.write(Template(tmplob).safe_substitute(data))
 print "Generated: " + fout
 print "     from: " + options.tmplob
+print " "
+
+# Dockerfile-fat.tmpl
+options.tmplfat = 'Dockerfile-fat.tmpl'
+tmplfat = open(options.tmplfat, 'r').read()
+fout = os.path.join(options.tag, 'fat', 'Dockerfile')
+out = open(fout, 'w')
+out.write(Template(tmplfat).safe_substitute(data))
+print "Generated: " + fout
+print "     from: " + options.tmplfat
 print " "
