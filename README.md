@@ -2,7 +2,9 @@
 
 > ### WARNING!!!
 >
-> Because this image doesn't contain `python`, `node-gyp` and therefore native extension extensions will not work.
+> With the exception of `-fat` variants, which are much larger, these images
+> don't contain `python`. As such, `node-gyp` and therefore native extensions
+> will not work.
 
 This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) running with [Busybox](https://github.com/progrium/busybox) (~28 MB virtual size) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
 
@@ -27,9 +29,6 @@ This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) running
 * [`0.10.34`], [`0.10.34-onbuild`], [`0.10.34-fat`]
 * [`0.10.32`], [`0.10.32-onbuild`], [`0.10.32-fat`]
 * [`0.10.25`], [`0.10.25-onbuild`], [`0.10.25-fat`]
-
-> `-fat` varients are much larger &ndash; ~325mb &ndash; but have
-> full `node-gpy` support.
 
 #### ONBUILD variant
 
