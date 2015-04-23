@@ -21,8 +21,9 @@ This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) running
 
 ### Versions
 
-* [`0.12.0`], [`0.12.0-onbuild`], [`0.12.0-fat`],
+* [`0.12.2`], [`0.12.2-onbuild`], [`0.12.2-fat`],
   [`latest`], [`latest-onbuild`], [`latest-fat`]
+* [`0.12.0`], [`0.12.0-onbuild`], [`0.12.0-fat`]
 * [`0.11.16`], [`0.11.16-onbuild`], [`0.11.16-fat`]
 * [`0.11.14`], [`0.11.14-onbuild`], [`0.11.14-fat`]
 * [`0.10.36`], [`0.10.36-onbuild`], [`0.10.36-fat`]
@@ -96,6 +97,9 @@ Send me a pull request.
 [`0.12.0`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.0/Dockerfile
 [`0.12.0-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.0/onbuild/Dockerfile
 [`0.12.0-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.0/fat/Dockerfile
-[`latest`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.0/Dockerfile
-[`latest-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.0/onbuild/Dockerfile
-[`latest-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.0/fat/Dockerfile
+[`0.12.2`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.2/Dockerfile
+[`0.12.2-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.2/onbuild/Dockerfile
+[`0.12.2-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.2/fat/Dockerfile
+[`latest`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.2/Dockerfile
+[`latest-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.2/onbuild/Dockerfile
+[`latest-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.2/fat/Dockerfile
