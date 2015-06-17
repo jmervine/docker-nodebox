@@ -1,9 +1,9 @@
 IMAGE_BASE    := jmervine/nodebox
-TAG_DIRS      := $(shell find . -type d | sed 's/^\.\///' | grep -v "^_\|^\.\|onbuild\|fat")
+TAG_DIRS      := $(shell find -L . -type d | sed 's/^\.\///' | grep -v "^_\|^\.\|onbuild\|fat")
 GEN_TARGETS   := $(addprefix generate/, $(TAG_DIRS))
-BUILD_TARGETS := $(addprefix build/, $(TAG_DIRS)) build/latest
-PUSH_TARGETS  := $(addprefix push/, $(TAG_DIRS)) push/latest
-TEST_TARGETS  := $(addprefix test/, $(TAG_DIRS)) test/latest
+BUILD_TARGETS := $(addprefix build/, $(TAG_DIRS))
+PUSH_TARGETS  := $(addprefix push/, $(TAG_DIRS))
+TEST_TARGETS  := $(addprefix test/, $(TAG_DIRS))
 
 versions:
 	@echo "Versions:"

@@ -22,12 +22,15 @@ This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) running
 ### Versions
 
 * [`0.12.4`], [`0.12.4-onbuild`], [`0.12.4-fat`],
+  [`0.12`], [`0.12-onbuild`], [`0.12-fat`],
   [`latest`], [`latest-onbuild`], [`latest-fat`]
 * [`0.12.3`], [`0.12.3-onbuild`], [`0.12.3-fat`]
 * [`0.12.2`], [`0.12.2-onbuild`], [`0.12.2-fat`]
 * [`0.12.0`], [`0.12.0-onbuild`], [`0.12.0-fat`]
 * [`0.11.16`], [`0.11.16-onbuild`], [`0.11.16-fat`]
 * [`0.11.14`], [`0.11.14-onbuild`], [`0.11.14-fat`]
+* [`0.10.38`], [`0.10.38-onbuild`], [`0.10.38-fat`],
+  [`0.10`], [`0.10-onbuild`], [`0.10-fat`]
 * [`0.10.36`], [`0.10.36-onbuild`], [`0.10.36-fat`]
 * [`0.10.34`], [`0.10.34-onbuild`], [`0.10.34-fat`]
 * [`0.10.32`], [`0.10.32-onbuild`], [`0.10.32-fat`]
@@ -90,12 +93,21 @@ Send me a pull request.
 [`0.10.36`]: https://github.com/jmervine/docker-nodebox/blob/master/0.10.36/Dockerfile
 [`0.10.36-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.10.36/onbuild/Dockerfile
 [`0.10.36-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.10.36/fat/Dockerfile
+[`0.10.38`]: https://github.com/jmervine/docker-nodebox/blob/master/0.10.38/Dockerfile
+[`0.10.38-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.10.38/onbuild/Dockerfile
+[`0.10.38-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.10.38/fat/Dockerfile
+
+[`0.10`]: https://github.com/jmervine/docker-nodebox/blob/master/0.10.38/Dockerfile
+[`0.10-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.10.38/onbuild/Dockerfile
+[`0.10-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.10.38/fat/Dockerfile
+
 [`0.11.14`]: https://github.com/jmervine/docker-nodebox/blob/master/0.11.14/Dockerfile
 [`0.11.14-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.11.14/onbuild/Dockerfile
 [`0.11.14-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.11.14/fat/Dockerfile
 [`0.11.16`]: https://github.com/jmervine/docker-nodebox/blob/master/0.11.16/Dockerfile
 [`0.11.16-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.11.16/onbuild/Dockerfile
 [`0.11.16-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.11.16/fat/Dockerfile
+
 [`0.12.0`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.0/Dockerfile
 [`0.12.0-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.0/onbuild/Dockerfile
 [`0.12.0-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.0/fat/Dockerfile
@@ -108,6 +120,12 @@ Send me a pull request.
 [`0.12.4`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.4/Dockerfile
 [`0.12.4-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.4/onbuild/Dockerfile
 [`0.12.4-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.4/fat/Dockerfile
+
+[`0.12`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.4/Dockerfile
+[`0.12-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.4/onbuild/Dockerfile
+[`0.12-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.4/fat/Dockerfile
+
 [`latest`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.4/Dockerfile
 [`latest-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.4/onbuild/Dockerfile
-[`latest-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.4/fat/Dockerfile
+[`latest-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.4/fat/DockerfileA
+
