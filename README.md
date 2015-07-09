@@ -21,9 +21,10 @@ This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) running
 
 ### Versions
 
-* [`0.12.5`], [`0.12.5-onbuild`], [`0.12.5-fat`],
+* [`0.12.6`], [`0.12.6-onbuild`], [`0.12.6-fat`],
   [`0.12`], [`0.12-onbuild`], [`0.12-fat`],
   [`latest`], [`latest-onbuild`], [`latest-fat`]
+* [`0.12.5`], [`0.12.5-onbuild`], [`0.12.5-fat`]
 * [`0.12.4`], [`0.12.4-onbuild`], [`0.12.4-fat`]
 * [`0.12.3`], [`0.12.3-onbuild`], [`0.12.3-fat`]
 * [`0.12.2`], [`0.12.2-onbuild`], [`0.12.2-fat`]
@@ -68,13 +69,32 @@ Fork this repo.
 To add a new version, simply create a new directory -- updating the `latest` symlink if needed -- and run the following:
 
 ```bash
-make generate/NEW_VERSION build/NEW_VERSION test/NEW_VERSION push/NEW_VERSION
+# version are for example only
 
-# if latest is updated
-make generate/latest build/latest test/latest
+# create new version
+cp -r 0.12.5 0.12.6
+
+# update symlinks
+rm latest 0.12
+ln -s 0.12.6 latest
+ln -s 0.12.6 0.12
+
+# generate new Dockerfile(s)
+make generate/0.12.6
+
+# build new images
+make build/{0.12.6,0.12,latest}
+
+# test new images
+make test/{0.12.6,0.12,latest}
+
+# commit changes
+git add -A
+git commit -a -m 'Adding version 0.12.6'
+
 ```
 
-If updating either template, or the parent image:
+If updating either the template or the parent image:
 
 ```
 make generate build test
@@ -124,12 +144,15 @@ Send me a pull request.
 [`0.12.5`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.5/Dockerfile
 [`0.12.5-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.5/onbuild/Dockerfile
 [`0.12.5-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.5/fat/Dockerfile
+[`0.12.6`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.6/Dockerfile
+[`0.12.6-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.6/onbuild/Dockerfile
+[`0.12.6-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.6/fat/Dockerfile
 
-[`0.12`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.5/Dockerfile
-[`0.12-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.5/onbuild/Dockerfile
-[`0.12-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.5/fat/Dockerfile
+[`0.12`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.6/Dockerfile
+[`0.12-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.6/onbuild/Dockerfile
+[`0.12-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.6/fat/Dockerfile
 
-[`latest`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.5/Dockerfile
-[`latest-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.5/onbuild/Dockerfile
-[`latest-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.5/fat/DockerfileA
+[`latest`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.6/Dockerfile
+[`latest-onbuild`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.6/onbuild/Dockerfile
+[`latest-fat`]: https://github.com/jmervine/docker-nodebox/blob/master/0.12.6/fat/Dockerfile
 
