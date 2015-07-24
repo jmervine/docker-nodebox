@@ -1,3 +1,7 @@
+> ## DEPRICATION NOTICE
+>
+> #### I'm abandoning this in favor of [jmervine/mininode](https://registry.hub.docker.com/u/jmervine/mininode/) for newer version due to changes in Busybox which makes building things annoying. I will be added new versions there as they become available in Alpine's package manager. I've also included [jmervine/miniiojs](https://registry.hub.docker.com/u/jmervine/miniiojs/) as part of this switch.
+
 ## Node.js/Busybox Dockerfile
 
 > ### WARNING!!!
